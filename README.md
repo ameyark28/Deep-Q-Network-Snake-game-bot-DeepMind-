@@ -8,20 +8,19 @@ If we use first architecture, then for at a given state, we have to iterate thro
 
 We want to iterate through DQN only one time because iterating through a Neural Network is a computationally expensive step, and it takes time to get output. Thus less iteration is preferred.
 
-**SNAKE GAME**
+**SNAKE GAME:**
 
 In the game of snake, the snake has to eat food to grow, and avoid hitting walls and eating itself. First, we have to define the actions, state, and rewards.
 
 ![image](https://user-images.githubusercontent.com/42925930/133658163-18af03d7-9739-4d0b-bd63-333271c44e5d.png)
 
-**Actions**
-Snake can only move
-**left, forward, or right**.
-Snake can't move backward.
+**Actions:**
+Snake can only move **left, forward, or right**. Snake can't move backward.
+
 ![image](https://user-images.githubusercontent.com/42925930/133658246-83593342-8717-4b36-96d1-7b6fc21c6b08.png)
 
 
-**States**
+**States:**
 We can get the state of the game by just answering the following things:
 - Is there a wall or snake body on the left? **==> No**
 - Is there a wall or snake body in front?   **==>No**
@@ -33,5 +32,5 @@ We can get the state of the game by just answering the following things:
 - Is the food left or right?  **==> Left**
 - Is the food up or down?   **==>Down**
 
-Reward
+**Reward:**
 The agent will get **+10 rewar**d when the snake eats food, and **-10 (penalty)** when the snake eats itself or hits the wall.
